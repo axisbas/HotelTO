@@ -10,12 +10,9 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Reservas</title>
-        <link rel="stylesheet" href="css/reserva.css">
         <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
         <link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-        <script src="js/jquery.js"></script>
-        <script src="js/jquery-migrate-1.2.1.js"></script>
-        <script src="js/reservas.js"></script>  
+        <link rel="stylesheet" href="vista/css/reservas.css">
     </head>
     <body>
         <!-- =============================================================================
@@ -42,10 +39,10 @@
         <form action="">
             <!--  General -->
             <div class="form-group">
-                <h2 class="heading">Booking & contact</h2>
+                <h2 class="heading">Reserva y contacto</h2>
                 <div class="controls">
                     <input type="text" id="name" class="floatLabel" name="name">
-                    <label for="name">Name</label>
+                    <label for="name">Nombre</label>
                 </div>
                 <div class="controls">
                     <input type="text" id="email" class="floatLabel" name="email">
@@ -53,19 +50,19 @@
                 </div>       
                 <div class="controls">
                     <input type="tel" id="phone" class="floatLabel" name="phone">
-                    <label for="phone">Phone</label>
+                    <label for="phone">Teléfono</label>
                 </div>
                 <div class="grid">
                     <div class="col-2-3">
                         <div class="controls">
                             <input type="text" id="street" class="floatLabel" name="street">
-                            <label for="street">Street</label>
+                            <label for="street">Calle</label>
                         </div>          
                     </div>
                     <div class="col-1-3">
                         <div class="controls">
                             <input type="number" id="street-number" class="floatLabel" name="street-number">
-                            <label for="street-number">Number</label>
+                            <label for="street-number">Número</label>
                         </div>          
                     </div>
                 </div>
@@ -73,35 +70,35 @@
                     <div class="col-2-3">
                         <div class="controls">
                             <input type="text" id="city" class="floatLabel" name="city">
-                            <label for="city">City</label>
+                            <label for="city">Ciudad</label>
                         </div>         
                     </div>
                     <div class="col-1-3">
                         <div class="controls">
                             <input type="text" id="post-code" class="floatLabel" name="post-code">
-                            <label for="post-code">Post Code</label>
+                            <label for="post-code">Código Postal</label>
                         </div>         
                     </div>
                 </div>
                 <div class="controls">
                     <input type="text" id="country" class="floatLabel" name="country">
-                    <label for="country">Country</label>
+                    <label for="country">País</label>
                 </div>
             </div>
             <!--  Details -->
             <div class="form-group">
-                <h2 class="heading">Details</h2>
+                <h2 class="heading">Detalles</h2>
                 <div class="grid">
                     <div class="col-1-4 col-1-4-sm">
                         <div class="controls">
                             <input type="date" id="arrive" class="floatLabel" name="arrive" value="<?php echo date('Y-m-d'); ?>">
-                            <label for="arrive" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Arrive</label>
+                            <label for="arrive" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Llegada</label>
                         </div>      
                     </div>
                     <div class="col-1-4 col-1-4-sm">
                         <div class="controls">
                             <input type="date" id="depart" class="floatLabel" name="depart" value="<?php echo date('Y-m-d'); ?>" />
-                            <label for="depart" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Depart</label>
+                            <label for="depart" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Salida</label>
                         </div>      
                     </div>
                 </div>
@@ -115,7 +112,7 @@
                                 <option value="2" selected>2</option>
                                 <option value="3">3</option>
                             </select>
-                            <label for="fruit"><i class="fa fa-male"></i>&nbsp;&nbsp;People</label>
+                            <label for="fruit"><i class="fa fa-male"></i>&nbsp;&nbsp;Ocupantes</label>
                         </div>      
                     </div>
                     <div class="col-1-3 col-1-3-sm">
@@ -123,10 +120,10 @@
                             <i class="fa fa-sort"></i>
                             <select class="floatLabel">
                                 <option value="blank"></option>
-                                <option value="deluxe" selected>With Bathroom</option>
-                                <option value="Zuri-zimmer">Without Bathroom</option>
+                                <option value="deluxe" selected>Con Baño</option>
+                                <option value="Zuri-zimmer">Sin Baño</option>
                             </select>
-                            <label for="fruit">Room</label>
+                            <label for="fruit">Habitación</label>
                         </div>     
                     </div>
 
@@ -135,22 +132,22 @@
                             <i class="fa fa-sort"></i>
                             <select class="floatLabel">
                                 <option value="blank"></option>
-                                <option value="single-bed">Zweibett</option>
-                                <option value="double-bed" selected>Doppelbett</option>
+                                <option value="single-bed">Sencilla</option>
+                                <option value="double-bed" selected>Doble</option>
                             </select>
-                            <label for="fruit">Bedding</label>
+                            <label for="fruit">Cama</label>
                         </div>     
                     </div>
 
                 </div>
                 <div class="grid">
-                    <p class="info-text">Please describe your needs e.g. Extra beds, children's cots</p>
+                    <p class="info-text">Describa sus necesidades (Camas extra, acomodamiento para niños, ...)</p>
                     <br>
                     <div class="controls">
                         <textarea name="comments" class="floatLabel" id="comments"></textarea>
-                        <label for="comments">Comments</label>
+                        <label for="comments">Comentarios</label>
                     </div>
-                    <button type="submit" value="Submit" class="col-1-4">Submit</button>
+                    <button type="submit" value="Submit" class="col-1-4">Envio</button>
                 </div>  
             </div> <!-- /.form-group -->
         </form>

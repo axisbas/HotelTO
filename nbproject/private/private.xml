@@ -3,7 +3,19 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/axisb/Documents/NetBeansProjects/HotelTO/src/java/dao/UserDao.java</file>
+            <file>file:/C:/Users/axisb/Documents/NetBeansProjects/HotelTO/src/java/struts.xml</file>
+            <file>file:/C:/Users/axisb/Documents/NetBeansProjects/HotelTO/src/java/entity/Users.hbm.xml</file>
+            <file>file:/C:/Users/axisb/Documents/NetBeansProjects/HotelTO/web/vista/acceso.jsp</file>
+            <file>file:/C:/Users/axisb/Documents/NetBeansProjects/HotelTO/src/java/entity/Users.java</file>
+            <file>file:/C:/Users/axisb/Documents/NetBeansProjects/HotelTO/src/java/entity/Rerservas.hbm.xml</file>
+            <file>file:/C:/Users/axisb/Documents/NetBeansProjects/HotelTO/src/java/dao/LoginAction.java</file>
+            <file>file:/C:/Users/axisb/Documents/NetBeansProjects/HotelTO/web/vista/hello.jsp</file>
             <file>file:/C:/Users/axisb/Documents/NetBeansProjects/HotelTO/web/vista/index.jsp</file>
+            <file>file:/C:/Users/axisb/Documents/NetBeansProjects/HotelTO/src/java/entity/hibernate.reveng.xml</file>
+            <file>file:/C:/Users/axisb/Documents/NetBeansProjects/HotelTO/web/vista/reservas.jsp</file>
+            <file>file:/C:/Users/axisb/Documents/NetBeansProjects/HotelTO/web/vista/css/reservas.css</file>
+            <file>file:/C:/Users/axisb/Documents/NetBeansProjects/HotelTO/web/vista/css/style.css</file>
         </group>
     </open-files>
 </project-private>

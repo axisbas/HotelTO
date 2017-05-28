@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 28-may-2017 19:30:21 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Reservas" table="reservas" catalog="dbhotel" optimistic-lock="version">
+        <id name="rname" type="string">
+            <column name="rname" length="10" />
+            <generator class="assigned" />
+        </id>
+        <property name="email" type="string">
+            <column name="email" length="50" unique="true" />
+        </property>
+        <property name="telf" type="string">
+            <column name="telf" length="10" />
+        </property>
+        <property name="calle" type="string">
+            <column name="calle" length="50" />
+        </property>
+        <property name="numero" type="string">
+            <column name="numero" length="4" />
+        </property>
+        <property name="ciudad" type="string">
+            <column name="ciudad" length="50" />
+        </property>
+        <property name="cp" type="string">
+            <column name="cp" length="5" />
+        </property>
+        <property name="pais" type="string">
+            <column name="pais" length="20" />
+        </property>
+        <property name="fentrada" type="date">
+            <column name="fentrada" length="10" />
+        </property>
+        <property name="fsalida" type="date">
+            <column name="fsalida" length="10" />
+        </property>
+        <property name="ocupantes" type="int">
+            <column name="ocupantes" not-null="true" />
+        </property>
+        <property name="bano" type="boolean">
+            <column name="bano" not-null="true" />
+        </property>
+        <property name="cindividual" type="boolean">
+            <column name="cindividual" not-null="true" />
+        </property>
+        <property name="comentarios" type="string">
+            <column name="comentarios" length="250" />
+        </property>
+    </class>
+</hibernate-mapping>

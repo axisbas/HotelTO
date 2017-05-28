@@ -2,9 +2,9 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
-        <title>Home</title>
+        <title>Inicio</title>
         <meta charset="utf-8">
         <meta name="format-detection" content="telephone=no"/>
         <link rel="icon" href="vista/images/favicon.ico" type="image/x-icon">
@@ -55,7 +55,7 @@
 
                     <div class="brand wow fadeIn">
                         <h1 class="brand_name">
-                            <a href="./">Hotel Vilaxoan</a>
+                            <a href="./">Hotel TO</a>
                         </h1>
                     </div>
                 </div>
@@ -85,7 +85,7 @@
             <main>
                 <section class="well">
                     <div class="container">
-                        <h2><em>Welcome</em>to Our Place</h2>
+                        <h2><em>Bienvenido</em>a nuestro Hotel</h2>
                         <div class="row">
                             <div class="grid_6">
                                 <div class="img img__border"><div class="lazy-img" style="padding-bottom: 63.0282%;"><img data-src="vista/images/page-1_img01.jpg" alt=""></div></div>
@@ -96,8 +96,8 @@
                                 <p class="center indents-1">Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla. Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis.Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla.</p>
                             </div>
                         </div>
-                        <div class="decoration"><a href="#" class="btn">Read more</a></div>
-                        <h2><em>Our</em>Cuisine</h2>
+                        <div class="decoration"><a href="#" class="btn">Leer más</a></div>
+                        <h2><em>Nuestra</em>Cocina</h2>
                     </div>            
                     <div class="gallery">
                         <div class="gallery_col-1">
@@ -191,19 +191,19 @@
                 </section>
                 <section class="parallax parallax1" data-parallax-speed="-0.4">
                     <div class="container">
-                        <h2><em>Our </em>Experience</h2>
+                        <h2><em>Nuestra </em>Historia</h2>
                         <p class="indents-2">Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla. Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis.Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla. Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis. Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis.Integer convallis orci </p>
-                        <a href="#" class="btn">View full menu</a>
+                        <a href="#" class="btn">Ver menú completo</a>
                     </div>
                 </section>
                 <section class="well well__offset-1 bg-1">
                     <div class="container">
-                        <h2><em>Our </em>Cooks</h2>
+                        <h2><em>Nuestra </em>Cocina</h2>
                         <div class="row row__offset-1">
                             <div class="grid_4">
                                 <figure>
                                     <div class="img lazy-img" style="padding-bottom: 101.0810810810811%;"><img data-src="vista/images/page-1_img12.jpg" alt=""></div>
-                                    <figcaption>Kevin Grey</figcaption>
+                                    <figcaption>Alfonso Arús</figcaption>
                                 </figure>
                                 <h3>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl </h3>
                                 <p>Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis.Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla.</p>
@@ -211,7 +211,7 @@
                             <div class="grid_4">
                                 <figure>
                                     <div class="img lazy-img" style="padding-bottom: 101.0810810810811%;"><img data-src="vista/images/page-1_img13.jpg" alt=""></div>
-                                    <figcaption>Linda Klein</figcaption>
+                                    <figcaption>Juan Platero</figcaption>
                                 </figure>
                                 <h3>Oeteger convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl </h3>
                                 <p>Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis.Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla.</p>
@@ -219,22 +219,22 @@
                             <div class="grid_4">
                                 <figure>
                                     <div class="img lazy-img" style="padding-bottom: 101.0810810810811%;"><img data-src="vista/images/page-1_img14.jpg" alt=""></div>
-                                    <figcaption>Ann Shelton</figcaption>
+                                    <figcaption>Coci Nillas</figcaption>
                                 </figure>
                                 <h3>Koteger convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl </h3>
                                 <p>Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis.Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla.</p>
                             </div>
                         </div>
-                        <div class="decoration"><a href="#" class="btn">Read more</a></div>
+                        <div class="decoration"><a href="#" class="btn">Leer Más</a></div>
                     </div>
                 </section>
                 <section class="well well__offset-2">
                     <div class="container center">
-                        <h2><em>Make </em>a Reservation</h2>
+                        <h2><em>Haz </em>una Reserva</h2>
                         <p class="indents-2">Fnteger convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla. Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis.Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol.</p>
                         <address class="address-1">
-                            <dl><dt>Address:</dt> <dd>4578 Marmora Road, Glasgow DA04 89GR</dd></dl>
-                            <p><em>800 2345-6789</em></p>
+                            <dl><dt>Dirección:</dt> <dd>Calle Hojalata 23, Madrid</dd></dl>
+                            <p><em>900212524</em></p>
                         </address>
                     </div>
                 </section>
