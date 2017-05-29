@@ -21,48 +21,40 @@
             <div class="form-group">
                 <h2 class="heading">Reserva y contacto</h2>
                 <div class="controls">
-                    <s:textfield name="reserva.rname" label="name" class="floatLabel" />
-                    <label for="name">Nombre</label>
+                    <s:textfield name="reserva.rname" label="Nombre" class="floatLabel" />
                 </div>
                 <div class="controls">
-                    <s:textfield name="reserva.email" label="email" class="floatLabel" />
-                    <label for="email">Email</label>
+                    <s:textfield name="reserva.email" label="Email" class="floatLabel" />
                 </div>       
                 <div class="controls">
-                    <s:textfield name="reserva.telf" label="phone" class="floatLabel" />
-                    <label for="phone">Teléfono</label>
+                    <s:textfield name="reserva.telf" label="Teléfono" class="floatLabel" />
                 </div>
                 <div class="grid">
                     <div class="col-2-3">
                         <div class="controls">
-                            <s:textfield name="reserva.calle" label="street" class="floatLabel" />
-                            <label for="street">Calle</label>
+                            <s:textfield name="reserva.calle" label="Calle" class="floatLabel" />
                         </div>          
                     </div>
                     <div class="col-1-3">
                         <div class="controls">
-                            <s:textfield name="reserva.numero" label="street-number" class="floatLabel" />
-                            <label for="street-number">Número</label>
+                            <s:textfield name="reserva.numero" label="Número" class="floatLabel" />
                         </div>          
                     </div>
                 </div>
                 <div class="grid">
                     <div class="col-2-3">
                         <div class="controls">
-                            <s:textfield name="reserva.ciudad" label="city" class="floatLabel" />
-                            <label for="city">Ciudad</label>
+                            <s:textfield name="reserva.ciudad" label="Ciudad" class="floatLabel" />
                         </div>         
                     </div>
                     <div class="col-1-3">
                         <div class="controls">
-                            <s:textfield name="reserva.cp" label="post-code" class="floatLabel" />
-                            <label for="post-code">Código Postal</label>
+                            <s:textfield name="reserva.cp" label="Código Postal" class="floatLabel" />
                         </div>         
                     </div>
                 </div>
                 <div class="controls">
-                    <s:textfield name="reserva.pais" label="country" class="floatLabel" />
-                    <label for="country">País</label>
+                    <s:textfield name="reserva.pais" label="País" class="floatLabel" />
                 </div>
             </div>
             <div class="form-group">
@@ -85,37 +77,29 @@
                     <div class="col-1-3 col-1-3-sm">
                         <div class="controls">
                             <i class="fa fa-sort"></i>
-                            <s:date name="reserva.fentrada" />
-                            <s:select name="reserva.ocupantes" class="floatLabel">
-                                <option value="blank"></option>
-                                <option value="1">1</option>
-                                <option value="2" selected>2</option>
-                                <option value="3">3</option>
-                            </s:select>
-                            <label for="fruit"><i class="fa fa-male"></i>&nbsp;&nbsp;Ocupantes</label>
+                            <s:select name="reserva.ocupantes" class="floatLabel"
+                                      headerKey="-1" headerValue="Seleccione Ocupantes"
+                                      list="#@java.util.LinkedHashMap@{'1':'1','2':'2','3':'3'}"
+                                      value="reserva.ocupantes" label="Ocupantes"/>
                         </div>      
                     </div>
                     <div class="col-1-3 col-1-3-sm">
                         <div class="controls">
                             <i class="fa fa-sort"></i>
-                            <s:select name="reserva.bano" class="floatLabel">
-                                <option value="blank"></option>
-                                <option value="deluxe" selected>Con Baño</option>
-                                <option value="Zuri-zimmer">Sin Baño</option>
-                            </s:select>
-                            <label for="fruit">Habitación</label>
+                            <s:select name="reserva.bano" class="floatLabel" 
+                                      headerKey="-1" headerValue="Seleccione Baño"
+                                      list="#@java.util.LinkedHashMap@{'true':'Con Baño','false':'Sin Baño'}"
+                                      value="reserva.bano" label="Baño"/>
                         </div>     
                     </div>
 
                     <div class="col-1-3 col-1-3-sm">
                         <div class="controls">
                             <i class="fa fa-sort"></i>
-                            <s:select name="reserva.cindividual" class="floatLabel">
-                                <option value="blank"></option>
-                                <option value="single-bed">Sencilla</option>
-                                <option value="double-bed" selected>Doble</option>
-                            </s:select>
-                            <label for="fruit">Cama</label>
+                            <s:select name="reserva.cindividual" class="floatLabel" 
+                                      headerKey="-1" headerValue="Seleccione Tipo de Cama"
+                                      list="#@java.util.LinkedHashMap@{'true':'Individual','false':'Doble'}"
+                                      value="reserva.cindividual" label="Tipo Cama"/>
                         </div>     
                     </div>
 
@@ -124,8 +108,7 @@
                     <p class="info-text">Describa sus necesidades (Camas extra, acomodamiento para niños, ...)</p>
                     <br>
                     <div class="controls">
-                        <s:textfield name="reserva.comentarios" label="comments" class="floatLabel" />
-                        <label for="comments">Comentarios</label>
+                        <s:textfield name="reserva.comentarios" label="Comentarios" class="floatLabel" />
                     </div>
                     <s:submit value="Envio"/>
                 </div>  
