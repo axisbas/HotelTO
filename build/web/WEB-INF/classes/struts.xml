@@ -10,6 +10,12 @@
             <result name="input">acceso.jsp</result>
         </action>
     </package>
+    <package name="default" extends="struts-default">
+        <action name="reservas" class="dao.ReservasAction">
+            <result name="success">index.jsp</result>
+            <result name="input">reservas.jsp</result>
+        </action>
+    </package>
     <package 
         name="dao" extends="struts-default">    
     </package>

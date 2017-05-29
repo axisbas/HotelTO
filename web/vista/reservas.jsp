@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib uri="/struts-tags" prefix="s"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -15,7 +16,8 @@
         <link rel="stylesheet" href="vista/css/reservas.css">
     </head>
     <body>
-        <form action="">
+         <s:actionerror/>
+        <s:form action="reservas">
             <div class="form-group">
                 <h2 class="heading">Reserva y contacto</h2>
                 <div class="controls">
@@ -124,9 +126,9 @@
                         <textarea name="comments" class="floatLabel" id="comments"></textarea>
                         <label for="comments">Comentarios</label>
                     </div>
-                    <button type="submit" value="Submit" class="col-1-4">Envio</button>
+                    <button type="submit" value="Reservas" class="col-1-4">Envio</button>
                 </div>  
             </div> 
-        </form>
+        </s:form>
     </body>
 </html>
