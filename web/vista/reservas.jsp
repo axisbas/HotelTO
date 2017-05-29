@@ -15,29 +15,7 @@
         <link rel="stylesheet" href="vista/css/reservas.css">
     </head>
     <body>
-        <!-- =============================================================================
-    
-    Title: Simple Hotel booking form
-    Description: Simple Clean form for booking a room
-    Nerds name: Andi
-    Site: http://andi.io
-    Twitter: @gitmash
-    Location: Zurich, Switzerland 
-
-    ==== THANKS ==== 
-
-    Forked from @soulrider911 https://codepen.io/soulrider911/pen/ugnyl/
-    font: Lato (google font)
-    Icon font:   http://fontawesome.io/icons/
-
-    ==== @TODO ====
-
-    Make <select> easier to select
-
-========================================================================== -->
-
         <form action="">
-            <!--  General -->
             <div class="form-group">
                 <h2 class="heading">Reserva y contacto</h2>
                 <div class="controls">
@@ -85,7 +63,6 @@
                     <label for="country">País</label>
                 </div>
             </div>
-            <!--  Details -->
             <div class="form-group">
                 <h2 class="heading">Detalles</h2>
                 <div class="grid">
@@ -149,7 +126,7 @@
                     </div>
                     <button type="submit" value="Submit" class="col-1-4">Envio</button>
                 </div>  
-            </div> <!-- /.form-group -->
+            </div> 
         </form>
     </body>
 </html>

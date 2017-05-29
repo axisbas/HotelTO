@@ -1,9 +1,3 @@
-<%-- 
-    Document   : acceso
-    Created on : 28-may-2017, 10:27:00
-    Author     : axisb
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib uri="/struts-tags" prefix="s"%>
 <!DOCTYPE html>
