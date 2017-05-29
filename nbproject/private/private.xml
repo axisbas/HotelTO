@@ -3,13 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/amosquera/Desktop/Struts2Ex/HotelTO/src/java/dao/ReservasDao.java</file>
-            <file>file:/C:/Users/amosquera/Desktop/Struts2Ex/HotelTO/src/java/dao/UserDao.java</file>
-            <file>file:/C:/Users/amosquera/Desktop/Struts2Ex/HotelTO/web/vista/reservas.jsp</file>
-            <file>file:/C:/Users/amosquera/Desktop/Struts2Ex/HotelTO/web/vista/login.jsp</file>
-            <file>file:/C:/Users/amosquera/Desktop/Struts2Ex/HotelTO/src/java/entity/Reservas.java</file>
-            <file>file:/C:/Users/amosquera/Desktop/Struts2Ex/HotelTO/src/java/dao/ReservasAction.java</file>
-            <file>file:/C:/Users/amosquera/Desktop/Struts2Ex/HotelTO/src/java/dao/LoginAction.java</file>
+            <file>file:/C:/Users/axisb/Documents/NetBeansProjects/HotelTO/web/vista/index.jsp</file>
+            <file>file:/C:/Users/axisb/Documents/NetBeansProjects/HotelTO/src/java/dao/HibernateUtil.java</file>
         </group>
     </open-files>
 </project-private>

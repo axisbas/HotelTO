@@ -79,9 +79,9 @@
                         <div class="controls">
                             <i class="fa fa-sort"></i>
                             <s:select name="reserva.ocupantes" class="floatLabel"
-                                      headerKey="-1" headerValue="Seleccione Ocupantes"
+                                      headerKey="1" 
                                       list="#@java.util.LinkedHashMap@{'1':'1','2':'2','3':'3'}"
-                                      value="reserva.ocupantes" label="Ocupantes"/>
+                                      value="reserva.ocupantes" label="Ocupantes" required="true"/>
                         </div>      
                     </div>
                     <div class="col-1-3 col-1-3-sm">
@@ -90,7 +90,7 @@
                             <s:select name="reserva.bano" class="floatLabel" 
                                       headerKey="-1" headerValue="Seleccione Baño"
                                       list="#@java.util.LinkedHashMap@{'true':'Con Baño','false':'Sin Baño'}"
-                                      value="reserva.bano" label="Baño"/>
+                                      value="reserva.bano" label="Baño" required="true"/>
                         </div>     
                     </div>
 
@@ -100,7 +100,7 @@
                             <s:select name="reserva.cindividual" class="floatLabel" 
                                       headerKey="-1" headerValue="Seleccione Tipo de Cama"
                                       list="#@java.util.LinkedHashMap@{'true':'Individual','false':'Doble'}"
-                                      value="reserva.cindividual" label="Tipo Cama"/>
+                                      value="reserva.cindividual" label="Tipo Cama" required="true"/>
                         </div>     
                     </div>
 

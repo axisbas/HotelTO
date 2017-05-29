@@ -9,6 +9,7 @@ package dao;
  *
  * @author axisb
  */
+import com.opensymphony.xwork2.Action;
 import static com.opensymphony.xwork2.Action.INPUT;
 import static com.opensymphony.xwork2.Action.SUCCESS;
 import com.opensymphony.xwork2.ActionSupport;
@@ -30,14 +31,26 @@ public class ReservasAction extends ActionSupport {
         if (reserva.getEmail().length() == (0)) {
             this.addFieldError("reserva.email", "Email obligatorio");
         }
+
+        if (reserva.getFentrada() == null) {
+            this.addFieldError("reserva.fentrada", "Debe seleccionar la fecha de entrada y la fecha de salida");
+        }
+        if (reserva.getFsalida() == null) {
+            this.addFieldError("reserva.fentrada", "Debe seleccionar la fecha de entrada y la fecha de salida");
+        }
+
         if (!comparaFecha(reserva.getFentrada())) {
             this.addFieldError("reserva.fentrada", "La fecha de entrada ha de ser como mínimo en el día de hoy");
         }
         if (!comparaFecha(reserva.getFsalida())) {
             this.addFieldError("reserva.fsalida", "La fecha de salida ha de ser como mínimo mañana");
         }
-        if(reserva.getFsalida().before(reserva.getFentrada())){
-           this.addFieldError("reserva.fentrada", "La fecha de salida no puede ser anterior a la de entrada"); 
+        if (reserva.getFsalida().before(reserva.getFentrada())) {
+            this.addFieldError("reserva.fentrada", "La fecha de salida no puede ser anterior a la de entrada");
+        }
+        Integer ocupantes = reserva.getOcupantes();
+        if(ocupantes == null){
+            this.addFieldError("reserva.ocupantes", "Debe seleccionar un numero de ocupantes");
         }
     }
 
@@ -52,8 +65,8 @@ public class ReservasAction extends ActionSupport {
         }
         return false;
     }
-    
-        public boolean comparaFechaSalida(Date fsalida) {
+
+    public boolean comparaFechaSalida(Date fsalida) {
         Calendar c1 = Calendar.getInstance(); // today
         c1.add(Calendar.DAY_OF_YEAR, +1); // yesterday
         Calendar c2 = Calendar.getInstance();
@@ -67,7 +80,7 @@ public class ReservasAction extends ActionSupport {
 
     @Override
     public String execute() {
-        if (dao.nuevaReserva(reserva.getRname(), 
+        if (dao.nuevaReserva(reserva.getRname(),
                 reserva.getCalle(),
                 reserva.getCiudad(),
                 reserva.getComentarios(),
