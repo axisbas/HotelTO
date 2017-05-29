@@ -6,25 +6,26 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib uri="/struts-tags" prefix="s"%>
+<%@taglib prefix="sx" uri="/struts-dojo-tags" %>
 <!DOCTYPE html>
 <html>
     <head>
+        <sx:head />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Reservas</title>
-        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
         <link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="vista/css/reservas.css">
     </head>
     <body>
-         <s:actionerror/>
+        <s:actionerror/>
         <s:form action="reservas">
             <div class="form-group">
                 <h2 class="heading">Reserva y contacto</h2>
                 <div class="controls">
-                    <s:textfield name="reserva.rname" label="Nombre" class="floatLabel" />
+                    <s:textfield name="reserva.rname" label="Nombre" class="floatLabel" required="true"/>
                 </div>
                 <div class="controls">
-                    <s:textfield name="reserva.email" label="Email" class="floatLabel" />
+                    <s:textfield name="reserva.email" label="Email" class="floatLabel" required="true"/>
                 </div>       
                 <div class="controls">
                     <s:textfield name="reserva.telf" label="Teléfono" class="floatLabel" />
@@ -62,14 +63,14 @@
                 <div class="grid">
                     <div class="col-1-4 col-1-4-sm">
                         <div class="controls">
-                            <s:date name="reserva.fentrada" />
-                            <label for="arrive" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Llegada</label>
+                            <sx:datetimepicker name="reserva.fentrada" label="Fecha entrada:"
+                                               displayFormat="dd-MMM-yyyy" value="todayDate" />
                         </div>      
                     </div>
                     <div class="col-1-4 col-1-4-sm">
                         <div class="controls">
-                            <s:date name="reserva.fsalida" />
-                            <label for="depart" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Salida</label>
+                            <sx:datetimepicker name="reserva.fsalida" label="Fecha salida:"
+                                               displayFormat="dd-MMM-yyyy" value="todayDate+1" />
                         </div>      
                     </div>
                 </div>

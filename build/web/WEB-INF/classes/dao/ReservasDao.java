@@ -10,7 +10,6 @@ package dao;
  * @author axisb
  */
 import entity.Reservas;
-import entity.Users;
 import java.util.Date;
 import java.util.List;
 import org.hibernate.Query;
