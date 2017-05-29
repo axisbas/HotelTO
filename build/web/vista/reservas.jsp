@@ -21,27 +21,27 @@
             <div class="form-group">
                 <h2 class="heading">Reserva y contacto</h2>
                 <div class="controls">
-                    <input type="text" id="name" class="floatLabel" name="name">
+                    <s:textfield name="reserva.rname" label="name" class="floatLabel" />
                     <label for="name">Nombre</label>
                 </div>
                 <div class="controls">
-                    <input type="text" id="email" class="floatLabel" name="email">
+                    <s:textfield name="reserva.email" label="email" class="floatLabel" />
                     <label for="email">Email</label>
                 </div>       
                 <div class="controls">
-                    <input type="tel" id="phone" class="floatLabel" name="phone">
+                    <s:textfield name="reserva.telf" label="phone" class="floatLabel" />
                     <label for="phone">Teléfono</label>
                 </div>
                 <div class="grid">
                     <div class="col-2-3">
                         <div class="controls">
-                            <input type="text" id="street" class="floatLabel" name="street">
+                            <s:textfield name="reserva.calle" label="street" class="floatLabel" />
                             <label for="street">Calle</label>
                         </div>          
                     </div>
                     <div class="col-1-3">
                         <div class="controls">
-                            <input type="number" id="street-number" class="floatLabel" name="street-number">
+                            <s:textfield name="reserva.numero" label="street-number" class="floatLabel" />
                             <label for="street-number">Número</label>
                         </div>          
                     </div>
@@ -49,19 +49,19 @@
                 <div class="grid">
                     <div class="col-2-3">
                         <div class="controls">
-                            <input type="text" id="city" class="floatLabel" name="city">
+                            <s:textfield name="reserva.ciudad" label="city" class="floatLabel" />
                             <label for="city">Ciudad</label>
                         </div>         
                     </div>
                     <div class="col-1-3">
                         <div class="controls">
-                            <input type="text" id="post-code" class="floatLabel" name="post-code">
+                            <s:textfield name="reserva.cp" label="post-code" class="floatLabel" />
                             <label for="post-code">Código Postal</label>
                         </div>         
                     </div>
                 </div>
                 <div class="controls">
-                    <input type="text" id="country" class="floatLabel" name="country">
+                    <s:textfield name="reserva.pais" label="country" class="floatLabel" />
                     <label for="country">País</label>
                 </div>
             </div>
@@ -70,13 +70,13 @@
                 <div class="grid">
                     <div class="col-1-4 col-1-4-sm">
                         <div class="controls">
-                            <input type="date" id="arrive" class="floatLabel" name="arrive" value="<?php echo date('Y-m-d'); ?>">
+                            <s:date name="reserva.fentrada" />
                             <label for="arrive" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Llegada</label>
                         </div>      
                     </div>
                     <div class="col-1-4 col-1-4-sm">
                         <div class="controls">
-                            <input type="date" id="depart" class="floatLabel" name="depart" value="<?php echo date('Y-m-d'); ?>" />
+                            <s:date name="reserva.fsalida" />
                             <label for="depart" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Salida</label>
                         </div>      
                     </div>
@@ -85,23 +85,24 @@
                     <div class="col-1-3 col-1-3-sm">
                         <div class="controls">
                             <i class="fa fa-sort"></i>
-                            <select class="floatLabel">
+                            <s:date name="reserva.fentrada" />
+                            <s:select name="reserva.ocupantes" class="floatLabel">
                                 <option value="blank"></option>
                                 <option value="1">1</option>
                                 <option value="2" selected>2</option>
                                 <option value="3">3</option>
-                            </select>
+                            </s:select>
                             <label for="fruit"><i class="fa fa-male"></i>&nbsp;&nbsp;Ocupantes</label>
                         </div>      
                     </div>
                     <div class="col-1-3 col-1-3-sm">
                         <div class="controls">
                             <i class="fa fa-sort"></i>
-                            <select class="floatLabel">
+                            <s:select name="reserva.bano" class="floatLabel">
                                 <option value="blank"></option>
                                 <option value="deluxe" selected>Con Baño</option>
                                 <option value="Zuri-zimmer">Sin Baño</option>
-                            </select>
+                            </s:select>
                             <label for="fruit">Habitación</label>
                         </div>     
                     </div>
@@ -109,11 +110,11 @@
                     <div class="col-1-3 col-1-3-sm">
                         <div class="controls">
                             <i class="fa fa-sort"></i>
-                            <select class="floatLabel">
+                            <s:select name="reserva.cindividual" class="floatLabel">
                                 <option value="blank"></option>
                                 <option value="single-bed">Sencilla</option>
                                 <option value="double-bed" selected>Doble</option>
-                            </select>
+                            </s:select>
                             <label for="fruit">Cama</label>
                         </div>     
                     </div>
@@ -123,10 +124,10 @@
                     <p class="info-text">Describa sus necesidades (Camas extra, acomodamiento para niños, ...)</p>
                     <br>
                     <div class="controls">
-                        <textarea name="comments" class="floatLabel" id="comments"></textarea>
+                        <s:textfield name="reserva.comentarios" label="comments" class="floatLabel" />
                         <label for="comments">Comentarios</label>
                     </div>
-                    <button type="submit" value="Reservas" class="col-1-4">Envio</button>
+                    <s:submit value="Envio"/>
                 </div>  
             </div> 
         </s:form>
